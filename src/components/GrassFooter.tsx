@@ -70,7 +70,7 @@ export default function GrassFooter() {
   );
 
   return (
-    <div className="fixed bottom-0 left-0 w-full h-50 bg-[url('/icons/grass_floor.png')] bg-repeat-x bg-bottom [background-size:80%]">
+    <div className="fixed bottom-0 left-0 w-full h-50 bg-[url('/icons/grass_floor.png')] bg-repeat-x bg-bottom bg-size-[auto_160px]">
       {trees.map((tree: TreeData, i: number) => (
         <Image
           key={i}
