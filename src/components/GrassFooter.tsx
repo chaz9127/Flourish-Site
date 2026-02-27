@@ -70,19 +70,7 @@ export default function GrassFooter() {
   );
 
   return (
-    <div
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        width: '100%',
-        height: `${CONTAINER_HEIGHT}px`,
-        backgroundImage: "url('/icons/grass_floor.png')",
-        backgroundRepeat: 'repeat-x',
-        backgroundSize: '80%',
-        backgroundPosition: 'bottom',
-      }}
-    >
+    <div className="fixed bottom-0 left-0 w-full h-50 bg-[url('/icons/grass_floor.png')] bg-repeat-x bg-bottom [background-size:80%]">
       {trees.map((tree: TreeData, i: number) => (
         <Image
           key={i}
@@ -90,12 +78,8 @@ export default function GrassFooter() {
           alt={tree.src.split('/').pop()?.replace('.png', '').replace(/_/g, ' ') ?? 'tree'}
           width={TREE_WIDTH}
           height={TREE_HEIGHT}
-          style={{
-            position: 'absolute',
-            left: `${tree.left}%`,
-            top: `${tree.top}px`,
-            objectFit: 'contain',
-          }}
+          className="absolute object-contain"
+          style={{ left: `${tree.left}%`, top: `${tree.top}px` }}
         />
       ))}
     </div>
