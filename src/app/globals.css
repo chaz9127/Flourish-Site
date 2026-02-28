@@ -1,18 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #D8F3A6;
-  --foreground: #171717;
-  --green-primary: #3a6b35;
-  --green-highlight: #8bc34a;
+    --background: #d8f3a6;
+    --foreground: #171717;
+    --green-primary: #3a6b35;
+    --green-highlight: #8bc34a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-pixelfy: var(--font-pixelfy-sans);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-pixelfy: var(--font-pixelfy-sans);
+
+    --shadow-pixel: 4px 4px 0px var(--green-primary);
+    --shadow-pixel-hover: 5px 5px 0px var(--green-primary);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -23,35 +26,7 @@
 } */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Test Pixel Button */
-.pixel-btn {
-  /* General Styling */
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #5fad56; /* Green background */
-  color: #0f0f0f; /* Dark text color */
-  text-transform: uppercase;
-  
-  /* Pixel Effect */
-  border: none; /* Remove default border */
-  border-bottom: 5px solid #38667f; /* Thick bottom border as a shadow */
-  border-left: 1px solid #38667f; /* Thin left border for depth */
-  position: relative; /* Needed for active state positioning */
-}
-
-/* Hover State */
-.pixel-btn:hover {
-  background-color: #76c76e; /* Lighter green on hover */
-}
-
-/* Active (Pressed) State */
-.pixel-btn:active {
-  /* Creates the "pressed-in" effect */
-  border-bottom: 2px solid #38667f; /* Reduce bottom border thickness */
-  top: 3px; /* Move button down by the difference (5px - 2px = 3px) */
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
