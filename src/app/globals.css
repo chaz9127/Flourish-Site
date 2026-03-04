@@ -12,7 +12,8 @@
     --color-foreground: var(--foreground);
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
-    --font-pixelfy: var(--font-pixelfy-sans);
+    --font-pixel: var(--font-press-start-2p);
+    --font-pixel-body: var(--font-vt-323);
 
     --shadow-pixel: 4px 4px 0px var(--green-primary);
     --shadow-pixel-hover: 5px 5px 0px var(--green-primary);
@@ -29,4 +30,14 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container-bg {
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0, 0, 0, 0.1) 3px,
+        rgba(0, 0, 0, 0.1) 4px
+    );
 }
