@@ -7,9 +7,9 @@ import BrowserFrame from '@/components/BrowserFrame'
 export default function Home() {
     return (
         <main className="font-pixel">
-            <div className="flex flex-col items-center gap-12">
+            <div className="flex flex-col items-center gap-12 pb-52">
                 <div className="flourish-title mt-10 flex items-end gap-4">
-                    <h1 className="text-7xl text-[var(--green-primary)] text-shadow-[4px_4px_0_var(--green-highlight)]">
+                    <h1 className="text-4xl text-[var(--green-primary)] text-shadow-[4px_4px_0_var(--green-highlight)] md:text-7xl">
                         Flourish
                     </h1>
                     <Image
