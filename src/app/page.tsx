@@ -2,6 +2,7 @@ import GrassFooter from '@/components/GrassFooter'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import PixelCard from '@/components/PixelCard'
+import BrowserFrame from '@/components/BrowserFrame'
 
 export default function Home() {
     return (
@@ -21,35 +22,40 @@ export default function Home() {
                 </div>
                 <div className="grid w-full grid-cols-1 justify-items-center gap-8 px-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* TODO: Make into own cards */}
-                    <PixelCard className="w-full max-w-[350px] cursor-pointer overflow-hidden bg-[rgba(255,255,255,.5)] p-0 text-[var(--green-primary)]">
-                        <div className="image-container-bg h-60 w-full"></div>
-                        <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
-                            Add Your Sites
-                        </div>
-                        <div className="h-full bg-white px-4 py-1.5 text-sm">
-                            Add your productive and unproductive websites to
-                            keep yourself accountable
-                        </div>
-                    </PixelCard>
-                    <PixelCard className="w-full max-w-[350px] cursor-pointer overflow-hidden bg-[rgba(255,255,255,.5)] p-0 text-[var(--green-primary)]">
-                        <div className="image-container-bg h-60 w-full"></div>
-                        <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
-                            Focus
-                        </div>
-                        <div className="h-full bg-white px-4 py-1.5 text-sm">
-                            Now just concentrate on your work with minimal
-                            distractions...
+                    <PixelCard className="w-full max-w-[400px] bg-transparent p-0 text-[var(--green-primary)]">
+                        <BrowserFrame src="/steps/step-1.png" alt="Step 1" />
+                        <div className="mt-2 border-2 border-[var(--green-primary)]">
+                            <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
+                                Fill
+                            </div>
+                            <div className="bg-white px-4 py-1.5 text-sm">
+                                Fill in the sites that keep you productive or
+                                unproductive
+                            </div>
                         </div>
                     </PixelCard>
-                    <PixelCard className="w-full max-w-[350px] cursor-pointer overflow-hidden bg-[rgba(255,255,255,.5)] p-0 text-[var(--green-primary)]">
-                        <div className="image-container-bg h-60 w-full"></div>
-                        <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
-                            Grow
+                    <PixelCard className="w-full max-w-[400px] bg-transparent p-0 text-[var(--green-primary)]">
+                        <BrowserFrame src="/steps/step-2.png" alt="Step 2" />
+                        <div className="mt-2 border-2 border-[var(--green-primary)]">
+                            <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
+                                Focus
+                            </div>
+                            <div className="bg-white px-4 py-1.5 text-sm">
+                                Now just concentrate on your work and check your
+                                progress
+                            </div>
                         </div>
-                        <div className="h-full bg-white px-4 py-1.5 text-sm">
-                            ... and then watch your forest start to{' '}
-                            <span className="underline">flourish</span> just
-                            like you!
+                    </PixelCard>
+                    <PixelCard className="w-full max-w-[400px] bg-transparent p-0 text-[var(--green-primary)]">
+                        <BrowserFrame src="/steps/step-3.png" alt="Step 3" />
+                        <div className="mt-2 border-2 border-[var(--green-primary)]">
+                            <div className="bg-[var(--green-primary)] px-4 pt-3 pb-2 text-xs text-[var(--green-highlight)]">
+                                Grow
+                            </div>
+                            <div className="bg-white px-4 py-1.5 text-sm">
+                                ... now both you and your forest can{' '}
+                                <strong>flourish</strong> together
+                            </div>
                         </div>
                     </PixelCard>
                 </div>
