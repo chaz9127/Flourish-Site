@@ -5,15 +5,15 @@ import { cn } from '@/lib/utils'
 export default function PixelCard({
     className,
     children,
-    onClick,
+    url,
 }: {
     className?: string
     children: ReactNode
-    onClick?: () => void
+    url?: string
 }) {
     return (
         <div
-            onClick={onClick}
+            onClick={() => (url ? (window.location.href = url) : '')}
             className={cn('bg-[var(--green-highlight)] px-4 py-2', className)}
         >
             {children}
