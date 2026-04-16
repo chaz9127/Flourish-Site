@@ -59,7 +59,14 @@ export default function Home() {
                         </div>
                     </PixelCard>
                 </div>
-                <Button>Download</Button>
+                <Button
+                    onClick={() =>
+                        (window.location.href =
+                            'https://chromewebstore.google.com/detail/flourish/iccillecglphkmiabieinpcanicelidj')
+                    }
+                >
+                    Download
+                </Button>
             </div>
             <GrassFooter />
         </main>
